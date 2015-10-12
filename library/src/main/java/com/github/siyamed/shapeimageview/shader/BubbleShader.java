@@ -71,7 +71,7 @@ public class BubbleShader extends ShaderHelper {
         switch (arrowPosition) {
             case LEFT:
                 rectLeft = scaledTriangleHeight + x;
-                rectRight = resultWidth + rectLeft;
+                rectRight = resultWidth + x;
                 path.addRect(rectLeft, y, rectRight, resultHeight + y, Path.Direction.CW);
 
                 path.moveTo(x, centerY);
